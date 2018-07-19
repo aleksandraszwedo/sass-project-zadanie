@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'header';
+@import 'footer';
+
+
+* {
+    box-sizing: border-box;
+    font-family: $main-font;
+} 
+
+body {
+    margin: 0;
+}   

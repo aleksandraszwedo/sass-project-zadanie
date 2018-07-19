@@ -1,0 +1,38 @@
+#footer {
+    color: white;
+    background-color: #292929;
+    padding: 20px 10%;
+    text-align: center;
+}
+
+#footer #contact-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#footer #contact-footer .contact-icons i {
+    color: #292929;
+    background-color: #ecd407;
+    padding: 10px;
+    margin: 20px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+#footer #contact-footer .contact-icons i:hover {
+    background-color: #292929;
+    color: #ecd407;
+    cursor: pointer;
+}
+
+#footer #contact-footer .contact-icons p1 {
+    display: block;
+    font-size: 17px;
+}
+
+#footer p {
+    margin: 0;
+    padding: 30px;
+    font-size: 12px;
+}

@@ -1,0 +1,96 @@
+#main-header {
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#main-header #container-top {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 0 30px;
+    padding-right: 10%;
+}
+
+#main-header #container-top .finanse {
+    flex-basis: 50%;
+    text-align: left;
+}
+
+#main-header #container-top .finanse h1 .fas {
+    color: #ecd407;
+    font-size: 40px;
+}
+
+#main-header #container-top .contact {
+    flex-basis: 50%;
+    text-align: right;
+}
+
+#main-header #container-top .contact .fas {
+    color: #ecd407;
+    font-size: 40px;
+    padding: 16px;
+}
+
+#main-header #container-top .contact p {
+    display: inline-block;
+}
+
+#main-header #form-container {
+    width: 30%;
+    margin-right: 10%;
+}
+
+#main-header #form-container span {
+    color: #ecd407;
+}
+
+#main-header #form-container form {
+    background-color: #001d8a;
+    padding: 15px;
+}
+
+#main-header #form-container form input[type="text"],
+      #main-header #form-container form input[type="tel"],
+      #main-header #form-container form input[type="email"],
+      #main-header #form-container form textarea {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 20px;
+}
+
+#main-header #form-container form input[type="text"],
+      #main-header #form-container form input[type="tel"],
+      #main-header #form-container form input[type="email"] {
+    height: 50px;
+}
+
+#main-header #form-container form textarea {
+    height: 80px;
+}
+
+#main-header #form-container form input[type="submit"] {
+    height: 50px;
+    padding: 10px 20px;
+    margin: 5px 0;
+    background-color: #ecd407;
+    color: black;
+    font-family: "Open Sans";
+    border: solid 1px transparent;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+#main-header #form-container form input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
