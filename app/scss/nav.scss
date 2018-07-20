@@ -1,0 +1,53 @@
+@import 'variables';
+
+#main-nav.navbar-blue {
+    background-color: rgba(14, 216, 214, 0.6);
+    transition: 200ms linear;
+
+    a {
+        &:hover {
+            color: $dark-grey;
+        }
+    }
+}
+
+#main-nav {
+
+    padding: 0 10%;
+
+    a {
+        @include droid-font();
+        font-size: 25px;
+        transition: all 0.5s;
+        color: white;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    #navbarNav {
+
+        .navbar-nav {
+
+                margin-left: auto; 
+            
+            .styleNav {
+
+                background: transparent;
+
+                a {
+                    font-family: $nav-font;
+                    font-style: normal;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 15px;
+                }
+
+            }
+
+        }
+
+    }
+
+}

@@ -1,42 +1,68 @@
 @import 'variables';
 
 #footer {
-    color: white;
-    background-color: $grey;
-    padding: 20px 10%;
+
+    width: 100%;
+    padding: 5px 5%;
     text-align: center;
-    
-    #contact-footer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        
-        .contact-icons {
-            i {
-                color: $grey;
-                background-color: $yellow;
-                padding: 10px;
-                margin: 20px;
-                font-size: 20px;
-                transition: 0.4s;
-                
-                &:hover {
-                    background-color: $grey;
-                    color: $yellow;
-                    cursor: pointer;
-                }
+
+    .row {
+
+        .to-center {
+
+            line-height: 50px;
+
+            p {
+                color: $dark-grey;
+                font-style: normal;
+                font-family: $main-font;
+                text-align: left;
+                padding: 0;
+                margin: 0;
             }
-            
-            p1 {
-                display: block;
-                font-size: 17px;
+
+        }
+        
+        .socials {
+            i{
+                @include socials();
             }
         }
+
+        .footer-nav {
+
+            line-height: 50px;
+
+            ul {
+
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin: 0;
+
+                .navbar-footer {
+
+                    list-style: none;
+                    text-decoration: none;
+                    margin: 0 10px;
+
+                    a {
+                        color: $dark-grey;
+
+                        &:hover {
+                            color: $blue;
+                            text-decoration: none;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
     }
-    
-    p {
-        margin: 0;
-        padding: 30px;
-        font-size: 12px;
-    }
-} 
+
+}

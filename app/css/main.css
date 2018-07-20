@@ -1,144 +1,354 @@
-#main-header {
-    background-image: url(../img/background.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+#main-nav.navbar-blue {
+    background-color: rgba(14, 216, 214, 0.6);
+    transition: 200ms linear;
+}
+
+#main-nav.navbar-blue a:hover {
+    color: #333333;
+}
+
+#main-nav {
+    padding: 0 10%;
+}
+
+#main-nav a {
+    font-family: "Droid Sans";
+    font-style: italic;
+    font-size: 25px;
+    transition: all 0.5s;
     color: white;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
 }
 
-#main-header #container-top {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    padding: 0 30px;
-    padding-right: 10%;
+#main-nav a:hover {
+    color: #0ed8d6;
 }
 
-#main-header #container-top .finanse {
-    flex-basis: 50%;
-    text-align: left;
+#main-nav #navbarNav .navbar-nav {
+    margin-left: auto;
 }
 
-#main-header #container-top .finanse h1 .fas {
-    color: #ecd407;
-    font-size: 40px;
+#main-nav #navbarNav .navbar-nav .styleNav {
+    background: transparent;
 }
 
-#main-header #container-top .contact {
-    flex-basis: 50%;
-    text-align: right;
-}
-
-#main-header #container-top .contact .fas {
-    color: #ecd407;
-    font-size: 40px;
-    padding: 16px;
-}
-
-#main-header #container-top .contact p {
-    display: inline-block;
-}
-
-#main-header #form-container {
-    width: 30%;
-    margin-right: 10%;
-}
-
-#main-header #form-container span {
-    color: #ecd407;
-}
-
-#main-header #form-container form {
-    background-color: #001d8a;
-    padding: 15px;
-}
-
-#main-header #form-container form input[type="text"],
-      #main-header #form-container form input[type="tel"],
-      #main-header #form-container form input[type="email"],
-      #main-header #form-container form textarea {
-    width: 100%;
-    margin: 5px 0;
-    padding: 10px 20px;
-}
-
-#main-header #form-container form input[type="text"],
-      #main-header #form-container form input[type="tel"],
-      #main-header #form-container form input[type="email"] {
-    height: 50px;
-}
-
-#main-header #form-container form textarea {
-    height: 80px;
-}
-
-#main-header #form-container form input[type="submit"] {
-    height: 50px;
-    padding: 10px 20px;
-    margin: 5px 0;
-    background-color: #ecd407;
-    color: black;
-    font-family: "Open Sans";
-    border: solid 1px transparent;
+#main-nav #navbarNav .navbar-nav .styleNav a {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
     font-weight: 700;
+    font-size: 15px;
+}
+
+#main-header {
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/header/pictures_on_the_wall.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+#services .container .small-containers p {
+    font-style: normal;
+}
+
+#services .container .small-containers i.fas {
+    background-color: #0ed8d6;
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    transition: 0.4s;
+    margin-bottom: 20px;
+}
+
+#services .container .small-containers i.fas:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+    background-color: white;
+    color: #0ed8d6;
+}
+
+#portfolio {
+    background-color: #f7f7f7;
+    width: 100%;
+}
+
+#portfolio .container .row .small-containers .container-portfolio {
+    background-color: white;
+    width: 100%;
+}
+
+#portfolio .container .row .small-containers .container-portfolio .overflow {
+    height: 230px;
+    overflow: hidden;
+}
+
+#portfolio .container .row .small-containers .container-portfolio .overflow .pic-1 {
+    background-image: url(../img/portfolio/box_of_cookies.jpg);
+}
+
+#portfolio .container .row .small-containers .container-portfolio .overflow .pic-2 {
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
+}
+
+#portfolio .container .row .small-containers .container-portfolio .overflow .pic-3 {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+}
+
+#portfolio .container .row .small-containers .container-portfolio .overflow .pic-4 {
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+}
+
+#portfolio .container .row .small-containers .container-portfolio .overflow .pic-5 {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+}
+
+#portfolio .container .row .small-containers .container-portfolio .overflow .pic-6 {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+}
+
+#portfolio .container .row .small-containers .container-portfolio .overflow .pictures {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#portfolio .container .row .small-containers .container-portfolio .overflow .pictures:hover {
+    transform: scale(1.3);
     transition: 0.4s;
 }
 
-#main-header #form-container form input[type="submit"]:hover {
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: white;
+#portfolio .container .row .small-containers .container-portfolio .overflow .pictures .mask {
+    background-color: rgba(14, 216, 214, 0.6);
+    opacity: 0;
+    height: 100%;
+    transition: 0.4s;
 }
 
-#footer {
+#portfolio .container .row .small-containers .container-portfolio .overflow .pictures .mask:hover {
+    opacity: 1;
+}
+
+#portfolio .container .row .small-containers .container-portfolio .overflow .pictures .mask i.fas {
+    text-align: center;
     color: white;
-    background-color: #292929;
-    padding: 20px 10%;
+    font-size: 50px;
+    height: 100%;
+    width: 100%;
+    line-height: 230px;
+}
+
+#team .container .row .small-containers p {
+    font-style: normal;
+}
+
+#team .container .row .small-containers img {
+    border-radius: 50%;
+}
+
+#team .container .row .small-containers .socials i {
+    background-color: #333333;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    margin: 5px 10px;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+#team .container .row .small-containers .socials i:hover {
+    background-color: #0ed8d6;
+    cursor: pointer;
+}
+
+#team .container .paragraf {
+    padding: 50px 0;
+    font-style: normal;
+}
+
+#contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/footer/world-map.jpg);
+    width: 100%;
+    height: auto;
+}
+
+#contact .container-contact {
     text-align: center;
 }
 
-#footer #contact-footer {
+#contact .container-contact .white-text {
+    color: white;
+}
+
+#contact .container-contact .row .form1 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    height: 220px;
 }
 
-#footer #contact-footer .contact-icons i {
-    color: #292929;
-    background-color: #ecd407;
-    padding: 10px;
-    margin: 20px;
+#contact .container-contact .row .form1 input {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    padding: 10px 15px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#contact .container-contact .row .form2 {
+    padding-bottom: 30px;
+    height: 220px;
+}
+
+#contact .container-contact .row .form2 textarea {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    padding: 10px 15px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 100%;
+}
+
+#footer {
+    width: 100%;
+    padding: 5px 5%;
+    text-align: center;
+}
+
+#footer .row .to-center {
+    line-height: 50px;
+}
+
+#footer .row .to-center p {
+    color: #333333;
+    font-style: normal;
+    font-family: "Roboto Slab";
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .row .socials i {
+    background-color: #333333;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    margin: 5px 10px;
     font-size: 20px;
-    transition: 0.4s;
+    transition: all 0.5s;
 }
 
-#footer #contact-footer .contact-icons i:hover {
-    background-color: #292929;
-    color: #ecd407;
+#footer .row .socials i:hover {
+    background-color: #0ed8d6;
     cursor: pointer;
 }
 
-#footer #contact-footer .contact-icons p1 {
-    display: block;
-    font-size: 17px;
+#footer .row .footer-nav {
+    line-height: 50px;
 }
 
-#footer p {
+#footer .row .footer-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
     margin: 0;
-    padding: 30px;
-    font-size: 12px;
+}
+
+#footer .row .footer-nav ul .navbar-footer {
+    list-style: none;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#footer .row .footer-nav ul .navbar-footer a {
+    color: #333333;
+}
+
+#footer .row .footer-nav ul .navbar-footer a:hover {
+    color: #0ed8d6;
+    text-decoration: none;
 }
 
 * {
     box-sizing: border-box;
-    font-family: "Open Sans";
+    font-family: "Roboto Slab";
 }
 
 body {
     margin: 0;
+}
+
+h2,
+p {
+    font-family: "Droid Sans";
+    font-style: italic;
+}
+
+.container {
+    padding: 80px 5%;
+}
+
+.small-containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.btn-view {
+    font-family: "Montserrat", sans-serif;
+    background-color: #0ed8d6;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px;
+    width: 160px;
+}
+
+h1,
+h3,
+h5 {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+h3,
+h5 {
+    text-align: center;
+    width: 100%;
+    color: #333333;
+}
+
+p {
+    text-align: center;
+    width: 100%;
+    color: #777777;
+    padding-bottom: 20px;
 }

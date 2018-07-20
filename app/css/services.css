@@ -1,0 +1,23 @@
+#services .container .small-containers p {
+    font-style: normal;
+}
+
+#services .container .small-containers i.fas {
+    background-color: #0ed8d6;
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    transition: 0.4s;
+    margin-bottom: 20px;
+}
+
+#services .container .small-containers i.fas:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+    background-color: white;
+    color: #0ed8d6;
+}

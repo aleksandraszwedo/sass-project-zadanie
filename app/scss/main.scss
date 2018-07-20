@@ -1,13 +1,67 @@
 @import 'variables';
+@import 'nav';
 @import 'header';
+@import 'services';
+@import 'portfolio';
+@import 'team';
+@import 'contact';
 @import 'footer';
 
-
 * {
-    box-sizing: border-box;
+    box-sizing: border-box;  
     font-family: $main-font;
-} 
+}
 
 body {
     margin: 0;
-}   
+}
+
+h2,
+p {
+    @include droid-font();
+}
+ 
+.container {
+    padding: 80px 5%;
+}
+
+.small-containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.btn-view {
+    font-family: $nav-font;
+    background-color: $blue;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px;
+    width: 160px;
+}
+
+h1,
+h3,
+h5 {
+    text-transform: uppercase;
+    font-family: $nav-font;
+    font-style: normal;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+h3,
+h5 {
+    text-align: center;
+    width: 100%;
+    color: $dark-grey;
+}
+
+p {
+    text-align: center;
+    width: 100%;
+    color: $grey;
+    padding-bottom: 20px;
+}

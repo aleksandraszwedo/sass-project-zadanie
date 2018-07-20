@@ -1,0 +1,30 @@
+#team .container .row .small-containers p {
+    font-style: normal;
+}
+
+#team .container .row .small-containers img {
+    border-radius: 50%;
+}
+
+#team .container .row .small-containers .socials i {
+    background-color: #333333;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    margin: 5px 10px;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+#team .container .row .small-containers .socials i:hover {
+    background-color: #0ed8d6;
+    cursor: pointer;
+}
+
+#team .container .paragraf {
+    padding: 50px 0;
+    font-style: normal;
+}

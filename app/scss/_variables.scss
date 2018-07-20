@@ -1,4 +1,41 @@
-$main-font: 'Open Sans';
-$yellow: #ecd407;
-$grey: #292929;
-$blue: #001d8a;   
+$main-font: "Roboto Slab";
+$nav-font: "Montserrat",
+sans-serif;
+$blue: #0ed8d6;
+$grey: #777777;
+$dark-grey: #333333;
+$socials-color: #222222;
+
+@mixin droid-font() {
+    font-family: "Droid Sans";
+    font-style: italic;
+}
+
+@mixin form() {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    padding: 10px 15px;
+    font-family: $nav-font;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+@mixin socials() {
+    background-color: $dark-grey;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    margin: 5px 10px;
+    font-size: 20px;
+    transition: all 0.5s;
+
+    &:hover {
+        background-color: $blue;
+        cursor: pointer;
+    } 
+}

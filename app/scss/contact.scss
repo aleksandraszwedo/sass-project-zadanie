@@ -1,0 +1,48 @@
+@import 'variables';
+
+#contact {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/footer/world-map.jpg);
+    width: 100%;
+    height: auto;
+
+    .container-contact {
+        
+        text-align: center;
+
+        .white-text {
+            color: white;
+        }
+
+        .row {
+
+            .form1 {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding-bottom: 30px;
+                height: 220px;
+
+                input {
+                    @include form();
+                }
+            }
+
+            .form2 {
+
+                padding-bottom: 30px;
+                height: 220px;
+
+                textarea {
+                    @include form();
+                    height: 100%;
+                }
+            }
+
+        }
+
+    }
+
+}

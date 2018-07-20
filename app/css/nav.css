@@ -1,0 +1,40 @@
+#main-nav.navbar-blue {
+    background-color: rgba(14, 216, 214, 0.6);
+    transition: 200ms linear;
+}
+
+#main-nav.navbar-blue a:hover {
+    color: #333333;
+}
+
+#main-nav {
+    padding: 0 10%;
+}
+
+#main-nav a {
+    font-family: "Droid Sans";
+    font-style: italic;
+    font-size: 25px;
+    transition: all 0.5s;
+    color: white;
+}
+
+#main-nav a:hover {
+    color: #0ed8d6;
+}
+
+#main-nav #navbarNav .navbar-nav {
+    margin-left: auto;
+}
+
+#main-nav #navbarNav .navbar-nav .styleNav {
+    background: transparent;
+}
+
+#main-nav #navbarNav .navbar-nav .styleNav a {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+}

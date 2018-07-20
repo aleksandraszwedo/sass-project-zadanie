@@ -1,0 +1,49 @@
+#contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/footer/world-map.jpg);
+    width: 100%;
+    height: auto;
+}
+
+#contact .container-contact {
+    text-align: center;
+}
+
+#contact .container-contact .white-text {
+    color: white;
+}
+
+#contact .container-contact .row .form1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    height: 220px;
+}
+
+#contact .container-contact .row .form1 input {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    padding: 10px 15px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#contact .container-contact .row .form2 {
+    padding-bottom: 30px;
+    height: 220px;
+}
+
+#contact .container-contact .row .form2 textarea {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    padding: 10px 15px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 100%;
+}
