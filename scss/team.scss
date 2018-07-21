@@ -8,13 +8,20 @@
 
             .small-containers {
 
-                p {
-                    font-style: normal;
-                }
+                figure {
 
-                img {
+                    figcaption {
 
-                    border-radius: 50%;
+                        p {
+                            font-style: normal;
+                        }
+
+                        img {
+
+                            border-radius: 50%;
+
+                        }
+                    }
 
                 }
 
@@ -27,6 +34,7 @@
 
                 }
 
+
             }
 
         }
@@ -35,7 +43,7 @@
             padding: 50px 0;
             font-style: normal;
         }
-        
+
     }
 
 }
